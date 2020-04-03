@@ -4,7 +4,10 @@ function carregar() {
 	var cmpnt = window.document.getElementById('cmpnt');
 	var data = new Date();
 	var hora = data.getHours();
-	msg.innerHTML = 'Agora são '+hora+' horas.'
+	var min = data.getMinutes();
+	var sec = data.getSeconds();
+	
+	msg.innerHTML = hora+':'+'min'+'sec'
 
 	if (hora >= 0 && hora < 12) {
 		//BOM DIA!
